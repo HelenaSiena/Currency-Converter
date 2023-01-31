@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: baseline;
+
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+body { 
+    text-align: center;
+    height: 100vh;
+    font-size: 24px;
+}
+#background{
+    background: linear-gradient(136.31deg, #231927 14.16%, #281735 53.39%, #23193E 82.63%);
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.title { 
+    margin: 30px;
+}
+.alura-logo { 
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+body > img { 
+    margin: 0 10px;
+}
+img {
+    max-height: 250px;
+}
+.img-coin { 
+    transform: matrix(0.65, 0.77, -0.83, 0.55, 0, 0);
+}
+/*Efeito na moeda*/
+.img-coin { 
+    transition: 0.3s;
+}
+.img-coin:hover { 
+    transform:scale(1.1);
+}
+.text-central {
+    margin-top: 20px;
+}
+footer { 
+    border-top: 1px solid #8e69aa;
+    margin: 110px;
+}
+.img-imersao { 
+    width: 200px;
+}
+footer p{
+    margin: 10px ;
+}
+
+

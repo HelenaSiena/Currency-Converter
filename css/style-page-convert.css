@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+body { 
+    text-align: center;
+    height: 100vh;
+    font-size: 24px;
+}
+#background{
+    background: linear-gradient(136.31deg, #231927 14.16%, #281735 53.39%, #23193E 82.63%);
+}
+p, radio, label, button { 
+    color: white;
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+/*Header*/
+i {
+    width: 100px;
+    margin: 10px;
+    color: white;
+}
+header a{
+    text-decoration: none;
+}
+/*Main*/
+h1 { 
+    color: white;
+}
+input{
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 8px;
+    border: none;
+    width: 30%;
+    display: block;
+    
+}
+select {
+    border-radius: 8px;
+    margin: 10px;
+}
+.button{
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8e69aa;
+    cursor: pointer;
+}
+span {
+    color: white;
+}
+span i { 
+    margin: -20px;
+}
+
+/*Footer*/
+footer { 
+    border-top: 1px solid #8e69aa;
+    margin: 50px auto;
+
+}
+.img-imersao { 
+    width: 200px;
+}
+footer p{
+    margin: 10px ;
+}
