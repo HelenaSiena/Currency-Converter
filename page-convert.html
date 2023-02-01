@@ -29,26 +29,24 @@
         <div class="container">
             <div class="title">
                 <h1>
-                    Agora que já inseriu o valor em Real (R$)
+                    Insira o valor a ser convertido
                 </h1>
             </div>
-            <div>
-                <div class="option" aria-required="true">
-                    <h2> <br> Informe para qual moeda deseja converter</h2>
-                    <select id="typeCoin">
-                        <option value="1.14">EUR €</option>
-                        <option value="1">USD $</option>
-                        <option value="0.77">BTC R$</option>
-                    </select>
-                </div>
+            <div id="value">
+                <input type="number" id="valueNumber" >
             </div>
-                <div>
-                    <button class="button" type="submit" onclick="convertCoin()">
-                        Convert
-                        <span><i class="fa-solid fa-arrow-down-long"></i></span>
-                    </button>
-                </div>
-                <input type="text" id="result" readonly="readonly">
+            <div class="option" aria-required="true">
+                <h2> <br> Informe qual moeda deseja converter</h2>
+                <input type="radio" name="options" id="dollar">Dollar $
+                <input type="radio" name="options" id="euro">Euro
+                <input type="radio" name="options" id="bitCoin">BitCoin
+            </div>
+            <div>
+                <button class="button" type="submit" onclick="convertCoin()">
+                    Converter
+                </button>
+            </div>
+            <div id="result"></div>
         </div>
     </main>
 
