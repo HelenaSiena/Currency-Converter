@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site conversor de moedas feito junto à imersão dev 6 da escola Alura">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
-    ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />  
+    
     <link rel="stylesheet" href="/css/style-page-convert.css">
     <title>Conversor de Moedas</title>
 
@@ -30,44 +29,27 @@
         <div class="container">
             <div class="title">
                 <h1>
-                    Valor a ser convertido
+                    Agora que já inseriu o valor em Real (R$)
                 </h1>
             </div>
-            <div class="container">
-                <div class="valor">
-                    <form>
-                        <span for="valor">
-                            Informe o valor: 
-                        </span>
-                        <input type="text" id="valueCoin" name="valueCoin">
-                        <div>
-                            <span> De: </span>
-                            <select id="de-type-coin">
-                                <option value="1.14">EUR €</option>
-                                <option value="1">USD $</option>
-                                <option value="0.77">BR R$</option>
-                            </select>
-                            <span> Para:</span>
-                            <select id="to-type-coin">
-                                <option value="1">EUR €</option>
-                                <option value="0.77">USD $</option>
-                                <option value="1.14">BR R$</option>
-                            </select>
-                        </div>
-                        <div>
-                            <button class="button" type="submit">
-                                Convert
-                                <span><i class="fa-solid fa-arrow-down-long"></i></span>
-                            </button>
-                        </div>
-                    </form>
+            <div>
+                <div class="option" aria-required="true">
+                    <h2> <br> Informe para qual moeda deseja converter</h2>
+                    <select id="typeCoin">
+                        <option value="1.14">EUR €</option>
+                        <option value="1">USD $</option>
+                        <option value="0.77">BTC R$</option>
+                    </select>
                 </div>
             </div>
-            <div class="container">
-                <p id="result">
-
-                </p>
-            </div>
+                <div>
+                    <button class="button" type="submit" onclick="convertCoin()">
+                        Convert
+                        <span><i class="fa-solid fa-arrow-down-long"></i></span>
+                    </button>
+                </div>
+                <input type="text" id="result" readonly="readonly">
+        </div>
     </main>
 
     <footer class="container">
@@ -76,10 +58,6 @@
             &copy;Helena Siena - Todos os direitos reservados - 2023
         </p>
     </footer>
-    <script src="/js/jquery-3.6.3.min.js"></script>
-    <script src="/js/jquery.mask.min.js"></script>
-    <script src="/js/jquery.validate.min.js"></script>
-    <script src="/js/messages_pt_BR.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

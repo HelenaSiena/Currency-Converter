@@ -1,47 +1,37 @@
-$(document).ready(function() {
+// var real = prompt('\n Digite o valor em Real a converter: ');
 
-    // document.getElementsByClassName('.button') = ('click', function (){
-    //     var inputValue = document.getElementById("#valueCoin").value;
-    //     var fromTypeCoin = document.getElementById("#de-type-coin").value;
-    //     var toTypeCoin = document.getElementById("#to-type-coin").value;
-    
-    //     if ( fromTypeCoin == toTypeCoin) { 
-    //     document.getElementById("#result").innerHTML = ('Os valores escolhidos precisam ser diferentes!')
-    //     } else {
-    //     var result = inputValue * fromTypeCoin / toTypeCoin;
-    
-    //     document.getElementById("#result").innerHTML = result.toFixed(2);
-    //     }
-    // })
+var dollar = 0.20;
+var euro = 0.18;
+var bitCoin = 0.00000008;
 
-        
-    /**JQuery Mask Plugin */
-    $('#valueCoin').mask('0.000.000,00', {
-        reverse: true,
-        placeholder: '          Digite apenas números',
-    });
+var convert = 0;
 
-    /**JQuery Validate */
-    $('form').validate({ 
-        rules: {
-            valueCoin: {
-                maxlength: 100,
-                minlenght: 2,
-                required: true
-            },
-        },
-        messages: {
-            valueCoin: '<br>Por favor, insira o valor!',
-        },
-        submitHandler: function(form){
-            console.log(form);
-        },
-        invalidHandler: function(evento, validador){
-            let camposIncorretos = validador;
-            if (camposIncorretos) {
-                $('#result').html(`É necessário inserir um valor para converter!`);
+function convertCoin() { 
+    var radio = document.getElementById('#typeCoin');
+
+    for ( i = 0; i < radio.length; i++){ 
+        if (radio[i].checked){
+            switch (radio[1].value){
+                case "dollar":
+                    convert = real * dollar;
+                    convert = convert.toFixed(2);
+                    document.getElementById('#result').innerHTML = "$" + convert;
+                    break;
+
+                case "euro":
+                    convert = real * euro;
+                    convert = convert.toFixed(2);
+                    document.getElementById('#result').innerHTML = "$" + convert;
+                    break;
+
+                case "bitCoin":
+                    convert = real * bitCoin;
+                    convert = convert.toFixed(2);
+                    document.getElementById('#result').innerHTML = "$" + convert;
+                    break;
+                default:
+                    break;
             }
         }
-    });  
-
-});
+    }
+}

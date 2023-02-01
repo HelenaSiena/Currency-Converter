@@ -6,20 +6,19 @@
     box-sizing: border-box;
     text-decoration: none;
     font-size: 100%;
-    vertical-align: baseline;
     list-style: none;
 
     font-family: 'Ubuntu', sans-serif;
 }
 body { 
     text-align: center;
-    height: 100vh;
     font-size: 24px;
+    overflow: hidden;
 }
 #background{
     background: linear-gradient(136.31deg, #231927 14.16%, #281735 53.39%, #23193E 82.63%);
 }
-p, radio, label, button { 
+p, radio, button { 
     color: white;
 }
 .container {
@@ -36,7 +35,8 @@ header a{
     text-decoration: none;
 }
 /*Main*/
-h1 { 
+h1, h2 {
+    margin: 10px; 
     color: white;
 }
 input{
@@ -44,21 +44,28 @@ input{
     margin: 5px auto;
     border-radius: 8px;
     border: none;
-    width: 30%;
-    display: block;
-    
+    display: block;    
 }
-select {
-    border-radius: 8px;
-    margin: 10px;
+.option seletc { 
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+    
 }
 .button{
     padding: 20px;
-    margin: 10px;
+    margin: 15px 0 5px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px;    
+    box-shadow: 5px 5px 5px #000 ;
+    
     background-color: #8e69aa;
     cursor: pointer;
+    text-align: center;
+}
+.button:hover{ 
+    background-color: #b183d4;
+    color: #000;
 }
 span {
     color: white;
@@ -66,16 +73,19 @@ span {
 span i { 
     margin: -20px;
 }
+#result { 
+    margin: 10px auto;
+}
 
 /*Footer*/
 footer { 
     border-top: 1px solid #8e69aa;
-    margin: 50px auto;
-
+    margin: 100px 0;
 }
 .img-imersao { 
     width: 200px;
+    margin: 10px 0;
 }
 footer p{
-    margin: 10px ;
+    margin: 2px ;
 }
