@@ -52,14 +52,17 @@ img {
     margin-top: 20px;
 }
 footer { 
+    color: white;
     border-top: 1px solid #8e69aa;
-    margin: 110px;
+    margin: 100px 0;
+    padding: 10px; 
 }
 .img-imersao { 
     width: 200px;
+    margin: 10px 0;
 }
 footer p{
-    margin: 10px ;
+    line-height: 50px;
 }
 
 

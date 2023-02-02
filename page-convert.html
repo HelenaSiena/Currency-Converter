@@ -37,9 +37,9 @@
             </div>
             <div class="option" aria-required="true">
                 <h2> <br> Informe qual moeda deseja converter</h2>
-                <input type="radio" name="options" id="dollar">Dollar $
-                <input type="radio" name="options" id="euro">Euro
-                <input type="radio" name="options" id="bitCoin">BitCoin
+                <input type="radio" name="options" id="dollar" value="dollarValue" onclick="coinType(this.value)">Dollar $
+                <input type="radio" name="options" id="euro" value="euroValue" onclick="coinType(this.value)">Euro
+                <input type="radio" name="options" id="bitCoin" value="bitcoinValue" onclick="coinType(this.value)">BitCoin
             </div>
             <div>
                 <button class="button" type="submit" onclick="convertCoin()">
@@ -53,7 +53,7 @@
     <footer class="container">
         <img class="img-imersao" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" alt="imersão dev">
         <p>
-            &copy;Helena Siena - Todos os direitos reservados - 2023
+            &copy;Helena Siena & Ícaro Santos <br> Todos os direitos reservados - 2023
         </p>
     </footer>
     <script src="/js/main.js"></script>

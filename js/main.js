@@ -2,38 +2,51 @@ let dollarValue = 0.20;
 let euroValue = 0.18;
 let bitcoinValue = 0.0000008;
 
-let dollar = document.getElementById('#dollar');
-let euro = document.getElementById('#euro');
-let bitCoin = document.getElementById('#bitCoin');
-let calculo = 0;
+var coin = coinType
 
-let valueInput = document.getElementById('#valueNumber');
-let converter = document.getElementsByClassName('.button');
-let result = document.getElementById('#result');
+console.log(coin);
+
+function coinType(options) {
+    coin = options;
+    
+console.log(coin);
+
+    return coin; 
+}
 
 function convertCoin() {
-    if (valueInput.value >= 1){
-        dollar.addEventListener('click', ()=> {
-            calculo = valueInput.value * dollar;
-            result.innerHTML = 'R$ ' + calculo.toFixed(2);
-            console.log('dollar');
-            
-        })
-        euro.addEventListener('click', ()=> {
-            calculo = valueInput.value * euro;
-            result.innerHTML = 'R$ ' + calculo.toFixed(2);
-            console.log('euro');
-        })
-        bitCoin.addEventListener('click', ()=> {
-            calculo = valueInput.value * bitCoin;
-            result.innerHTML = 'R$ ' + calculo.toFixed(2);
-            console.log('bitCoin');
-        });
-        
-    } else{
-        result.innerHTML = 'É necessário adicionar um valor!'
-    }
 
+    console.log(coin);
+
+    let valueInput = document.getElementById("valueNumber").value;
+
+    valueInput = parseFloat(valueInput);
+
+    let calculo = null;
+
+    console.log(valueInput); 
+
+    if (valueInput > 0 && coin == "dollarValue"){
+
+        calculo = valueInput * dollarValue;
+
+        result.innerHTML = 'R$ ' + calculo.toFixed(2);
+    }        
+    else if (valueInput > 0 && coin == "euroValue"){
+        calculo = valueInput * euroValue;
+
+        result.innerHTML = 'R$ ' + calculo.toFixed(2);
+    }    
+    else if (valueInput > 0 && coin == "bitcoinValue"){
+        
+        calculo = valueInput * bitcoinValue;
+
+        result.innerHTML = 'R$ ' + calculo.toFixed(2);
+    }            
+
+    else {
+        result.innerHTML = 'É necessário adicionar um valor válido para conversão. Recarregue a página e tente novamente!'
+    }
 }
 
 
