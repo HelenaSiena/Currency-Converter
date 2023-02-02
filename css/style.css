@@ -1,20 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 100%;
-    vertical-align: baseline;
-
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-}
 body { 
     text-align: center;
-    height: 100vh;
-    font-size: 24px;
+    font-size: 20px;
+    color: white;
 }
 #background{
     background: linear-gradient(136.31deg, #231927 14.16%, #281735 53.39%, #23193E 82.63%);
@@ -23,7 +12,8 @@ body {
     text-align: center;
     padding: 20px;
 }
-.title { 
+.title {
+    font-size: 1.5rem; 
     margin: 30px;
 }
 .alura-logo { 
@@ -32,13 +22,8 @@ body {
     top: 10px;
     right: 10px;
 }
-body > img { 
-    margin: 0 10px;
-}
-img {
-    max-height: 250px;
-}
-.img-coin { 
+.img-coin {
+    width: 190px;
     transform: matrix(0.65, 0.77, -0.83, 0.55, 0, 0);
 }
 /*Efeito na moeda*/
@@ -54,15 +39,105 @@ img {
 footer { 
     color: white;
     border-top: 1px solid #8e69aa;
-    margin: 100px 0;
+    margin: 50px 0;
     padding: 10px; 
 }
-.img-imersao { 
+/* .img-imersao { 
     width: 200px;
     margin: 10px 0;
-}
+} */
 footer p{
-    line-height: 50px;
+    line-height: 30px;
+}
+.img-git p a{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    /* cursor: pointer; */
+}
+.img-git img{
+    margin: 5px 20px;
+    width: 50px;
+    height: 50px;
+}
+.img-skills { 
+    width: 150px;
+    height: 150px;
+} 
+
+/*Medias Queries*/
+
+@media only screen and (max-width: 670px) {
+    body{
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .img-coin { 
+        width: 20%;
+    }
+    footer{
+        font-size: 16px;
+        margin: 90px 0 0 0;
+        line-height: normal;
+    }
+    /* .img-imersao { 
+        width: 150px;
+        margin: 10px 0;
+    } */
+    .img-git p a{
+        color: white;
+        text-decoration: none;
+        padding: 0 20px;
+        /* cursor: pointer; */
+    }
+    .img-git img{
+        margin: 5px 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .img-skills img {
+        margin: 15px 20px;
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media only screen and (min-width: 671px) and (max-width: 768px) {
+    body{
+        width: 100%;
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .img-coin { 
+        width: 20%;
+    }
+    footer{
+        font-size: 24px;
+        margin: 100px 0 0 0;
+        line-height: normal;
+    }
+    /* .img-imersao { 
+        width: 150px;
+        margin: 10px 0;
+    } */
+    .img-git p a{
+        color: white;
+        text-decoration: none;
+        padding: 0 20px;
+        /* cursor: pointer; */
+    }
+    .img-git img{
+        margin: 5px 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .img-skills img {
+        margin: 10px 20px;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 

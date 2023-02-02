@@ -45,50 +45,7 @@ function convertCoin() {
     }            
 
     else {
-        result.innerHTML = 'É necessário adicionar um valor válido para conversão. Recarregue a página e tente novamente!'
+        result.innerHTML = `É necessário adicionar um valor válido para conversão. <br><br> Verifique o valor e se o tipo de moeda está selecionado! `
     }
 }
 
-
-
-
-
-
-
-// // var real = prompt('\n Digite o valor em Real a converter: ');
-
-// var dollar = 0.20;
-// var euro = 0.18;
-// var bitCoin = 0.00000008;
-
-// var convert = 0;
-
-// function convertCoin() { 
-//     var radio = document.getElementById('#typeCoin');
-
-//     for ( i = 0; i < radio.length; i++){ 
-//         if (radio[i].checked){
-//             switch (radio[1].value){
-//                 case "dollar":
-//                     convert = real * dollar;
-//                     convert = convert.toFixed(2);
-//                     document.getElementById('#result').innerHTML = "$" + convert;
-//                     break;
-
-//                 case "euro":
-//                     convert = real * euro;
-//                     convert = convert.toFixed(2);
-//                     document.getElementById('#result').innerHTML = "$" + convert;
-//                     break;
-
-//                 case "bitCoin":
-//                     convert = real * bitCoin;
-//                     convert = convert.toFixed(2);
-//                     document.getElementById('#result').innerHTML = "$" + convert;
-//                     break;
-//                 default:
-//                     break;
-//             }
-//         }
-//     }
-// }
