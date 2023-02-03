@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-body { 
+body {
     text-align: center;
     font-size: 20px;
     color: white;
+    height: 100%;
 }
 #background{
     background: linear-gradient(136.31deg, #231927 14.16%, #281735 53.39%, #23193E 82.63%);
@@ -15,12 +16,6 @@ body {
 .title {
     font-size: 1.5rem; 
     margin: 30px;
-}
-.alura-logo { 
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
 }
 .img-coin {
     width: 190px;
@@ -42,10 +37,6 @@ footer {
     margin: 50px 0;
     padding: 10px; 
 }
-/* .img-imersao { 
-    width: 200px;
-    margin: 10px 0;
-} */
 footer p{
     line-height: 30px;
 }
@@ -53,26 +44,32 @@ footer p{
     color: white;
     text-decoration: none;
     padding: 0 20px;
-    /* cursor: pointer; */
 }
 .img-git img{
     margin: 5px 20px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
-.img-skills { 
-    width: 150px;
-    height: 150px;
+.img-skills img{ 
+    width: 80px;
+    height: 100px;
+    margin: 20px 20px;
 } 
 
 /*Medias Queries*/
 
-@media only screen and (max-width: 670px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
     body{
         width: 100%;
         font-size: 1.5rem;
         margin: 0 auto;
         overflow-x: hidden;
+    }
+    .title { 
+        margin: 0;
+    }
+    .text-central h2{
+        font-size: 1.5rem;
     }
     .img-coin { 
         width: 20%;
@@ -82,10 +79,6 @@ footer p{
         margin: 90px 0 0 0;
         line-height: normal;
     }
-    /* .img-imersao { 
-        width: 150px;
-        margin: 10px 0;
-    } */
     .img-git p a{
         color: white;
         text-decoration: none;
@@ -104,39 +97,36 @@ footer p{
     }
     
 }
-@media only screen and (min-width: 671px) and (max-width: 768px) {
+@media screen and (min-width: 641px) and (max-width: 1023px) {
     body{
-        width: 100%;
-        font-size: 1.5rem;
-        margin: 0 auto;
     }
     .img-coin { 
         width: 20%;
     }
     footer{
-        font-size: 24px;
-        margin: 100px 0 0 0;
-        line-height: normal;
+        margin-top: 24%;
     }
-    /* .img-imersao { 
-        width: 150px;
-        margin: 10px 0;
-    } */
-    .img-git p a{
-        color: white;
-        text-decoration: none;
-        padding: 0 20px;
-        /* cursor: pointer; */
+    footer p { 
+        line-height: 50px;
     }
-    .img-git img{
-        margin: 5px 20px;
-        width: 50px;
-        height: 50px;
+
+}
+@media only screen and (min-width: 1024px) {
+    body{
+        width: 100%;
     }
-    .img-skills img {
-        margin: 10px 20px;
-        width: 50px;
-        height: 50px;
+    .title {
+        font-size: 1.5rem;
+    }
+    #value input { 
+        padding: 20px;
+    }
+    .option {
+        font-size: 1.5rem; 
+        padding: 0;
+    }
+    footer{
+        margin-top: 40px;
     }
 }
 
