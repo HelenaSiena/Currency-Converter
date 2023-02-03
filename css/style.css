@@ -76,14 +76,7 @@ footer p{
     }
     footer{
         font-size: 16px;
-        margin: 90px 0 0 0;
-        line-height: normal;
-    }
-    .img-git p a{
-        color: white;
-        text-decoration: none;
-        padding: 0 20px;
-        /* cursor: pointer; */
+        line-height: 50px;
     }
     .img-git img{
         margin: 5px 20px;
@@ -93,21 +86,21 @@ footer p{
     .img-skills img {
         margin: 15px 20px;
         width: 40px;
-        height: 40px;
     }
     
 }
-@media screen and (min-width: 641px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     body{
     }
     .img-coin { 
         width: 20%;
     }
     footer{
-        margin-top: 24%;
+        font-size: 16px;
+        margin-top: 200px;
     }
     footer p { 
-        line-height: 50px;
+        line-height: 70px;
     }
 
 }
