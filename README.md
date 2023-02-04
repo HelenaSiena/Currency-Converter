@@ -3,7 +3,7 @@
 ## Um site para conversão da moeda Real (R$) para outras moedas.
 Obs.: O projeto ainda irá passar por melhorias, como acrescentar a responsividade.
 
-### Parceiro de projeto: [Ícaro Santos](https://github.com/Cauanunes91). 
+### Parceiro de projeto: [Ícaro Santos](https://github.com/FlightofIcarus). 
 
  ## Skills utilizadas:
 <div style="display: inline_block"><br>
